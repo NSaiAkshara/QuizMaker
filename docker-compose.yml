@@ -9,7 +9,7 @@ services:
       # MYSQL_USER: devuser
       # MYSQL_PASSWORD: devpass
     ports:
-      - "1000:3306"
+      - "2000:3306"
     volumes:
      - /home/manonmaie/Downloads/QM/QuizMakerdb_create.sql:/docker-entrypoint-initdb.d/create.sql
 
@@ -21,6 +21,6 @@ services:
     volumes:
       - /var/www/html/QuizMaker_se:/var/www/html/
     ports:
-      - "1001:80"
+      - "2001:80"
     stdin_open: true
     tty: true
